@@ -1,38 +1,104 @@
+:root {
+  --font-famaly: Helvetica;
+  --font-color: #232323;
+  --shadow-color: #fcfcfc;
+  --bg-color: #eeeeee;
+  --main-color: #28c528;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-famaly);
+  background-color: var(--shodow-color);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
 .App {
+  margin: 2rem auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 120%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
+  margin: 2rem 2rem;
+  color: #232323;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: var(--bg-color);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 400px) {
+  .section .items {
+    width: 90%;
+  }
+
+  .remove {
+    padding: 0.5rem 1rem;
+  }
+}
+.section .items {
+  display: flex;
+  background-color: var(--shadow-color);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem;
+  border-radius: 1rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.item p {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item p span {
+  font-size: 70%;
+}
+.item i {
+  font-size: 300%;
+  color: #28c52879;
+}
+.btn,
+.remove {
+  background: #28c528;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 120%;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.remove {
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 0;
+}
+.remove:hover {
+  color: #28c52879;
+}
+.btn:hover {
+  background-color: #28c52879;
+}
+.btn {
+  margin: auto;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import './BirthdayReminder.css'
 const Data = [
   {
     id: 1,

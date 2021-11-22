@@ -5,8 +5,10 @@
 ## Table of Contents
 
 - Birthdays Reminder
+- Our Tours
+
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->
 
-## How to clone this repository -->
+<!-- ## How to clone this repository --> -->

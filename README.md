@@ -7,6 +7,7 @@
 - Birthdays Reminder
 - Tours
 - Reviews
+- Accordion
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

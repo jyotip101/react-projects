@@ -1,0 +1,75 @@
+:root {
+  --font-color: #000;
+  --shadow-color: #fff;
+  --bg-color: #eeeeee;
+  --main-color: #cd1419;
+}
+body {
+  background-color: var(--bg-color);
+}
+section {
+  max-width: 500px;
+  width: fit-content;
+  padding: 2rem 0.5rem;
+  background-color: var(--shadow-color);
+}
+.App {
+  margin: 1rem;
+}
+
+.img-contanier {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin: 0 0 0.8rem 0;
+}
+.img-contanier i {
+  padding: 0.5rem;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-85px, 18px);
+  z-index: 1;
+  font-size: 150%;
+}
+.img-item {
+  transform: translate(-7px, 4px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+.text {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0.5rem 0;
+}
+.arroBtn {
+  display: flex;
+}
+.remove {
+  margin: 1rem 0 0 0;
+}
+.btn {
+  font-size: 16px;
+  padding: 00.5rem 0.9rem;
+  margin-top: 1rem;
+  color: var(--bg-color);
+}
+.btn:hover {
+  background-color: #cd141ab2;
+}
+.remove:hover {
+  color: #cd141ab2;
+}

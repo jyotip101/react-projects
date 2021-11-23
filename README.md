@@ -5,8 +5,8 @@
 ## Table of Contents
 
 - Birthdays Reminder
-- Our Tours
-
+- Tours
+- Reviews
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

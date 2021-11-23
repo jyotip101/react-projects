@@ -1,0 +1,54 @@
+:root {
+  --font-famaly: Helvetica;
+  --font-color: #232323;
+  --shadow-color: #fcfcfc;
+  --bg-color: #eeeeee;
+  --main-color: #28c528;
+}
+.contant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section .btn {
+  border: 2px solid var(--main-color);
+  background: transparent;
+  color: var(--main-color);
+  border-radius: 5px;
+}
+
+.remove {
+  display: contents;
+  margin: 0;
+}
+p {
+  font-size: 90%;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 0.5rem;
+}
+span {
+  color: var(--main-color);
+}
+
+h1 {
+  font-size: 200%;
+}
+.section h1 {
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.section {
+  width: fit-content;
+  padding: 0 0 1rem 0;
+  margin: 2rem 1rem;
+  max-width: 400px;
+  align-items: stretch;
+}

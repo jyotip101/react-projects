@@ -1,12 +1,17 @@
+:root {
+  --font-famaly: Helvetica;
+  --font-color: #232323;
+  --shadow-color: #fcfcfc;
+  --bg-color: #eeeeee;
+  --main-color: #28c528;
+}
+
 @media screen and (max-width: 400px) {
   .section .items {
     width: 90%;
   }
   .section {
-    width: 100%;
-  }
-  .remove {
-    padding: 0.5rem 1rem;
+    width: 90%;
   }
 }
 .section .items {
@@ -15,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0.2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 90%;
 }
 .item {
@@ -32,8 +37,23 @@
 
 .item p span {
   font-size: 70%;
+  margin-left: 1rem;
+  text-align: start;
 }
-.item i {
-  font-size: 300%;
-  color: #28c52879;
+.circular-img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.btn {
+  width: 90%;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  margin: 2rem;
 }

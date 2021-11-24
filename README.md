@@ -8,10 +8,9 @@
 - Tours
 - Reviews
 - Questions
-- Menu
-- [Tabs](https://jyotip101.github.io/react-projects/)
+- [Menu](https://jyotip101.github.io/react-projects/)
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->
 
-<!-- ## How to clone this repository --> -->
+<!-- ## How to clone this repository -->

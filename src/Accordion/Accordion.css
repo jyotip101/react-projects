@@ -14,6 +14,14 @@ section {
   border-radius: 0.2rem;
   background-color: #fff;
   margin: 2rem 1rem;
+  width: auto;
+}
+.App {
+  margin: 2px auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .items {
   border: 2px solid #ddd;

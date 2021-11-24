@@ -3,7 +3,8 @@ import './App.css'
 // import BirthdayReminder from './Birthdays Reminder/BirthdayReminder'
 // import Tours from './Tours/Tours'
 // import Reviews from './Reviews/Reviews'
-import Accordion from './Accordion/Accordion'
+// import Accordion from './Accordion/Accordion'
+import Menu from './Menu/Menu'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         {/* <BirthdayReminder /> */}
         {/* <Tours /> */}
         {/* <Reviews /> */}
-        <Accordion />
+        {/* <Accordion /> */}
+        <Menu />
       </div>
     </>
   )

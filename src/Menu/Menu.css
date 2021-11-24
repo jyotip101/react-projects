@@ -1,0 +1,55 @@
+:root {
+  --font-color: #16181e;
+  --shadow-color: #9da6b6;
+  --bg-color: #ffff;
+  --main-color: #fb6c6d;
+}
+body {
+  background-color: var(--bg-color);
+}
+.btn {
+  color: var(--main-color);
+  background-color: transparent;
+  padding: 0.2rem 0.5rem;
+  font-size: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  /* margin: 0.5rem; */
+}
+.header {
+  display: flex;
+  width: fit-content;
+  margin: 0.5rem auto;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 100%;
+  color: var(--main-color);
+}
+hr {
+  margin: 0 0 1rem 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  width: 100%;
+  height: min-content;
+}
+article {
+  width: 250px;
+  margin: 1rem;
+  justify-content: center;
+}
+p {
+  text-align: justify;
+  font-size: 90%;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0.5rem;
+}

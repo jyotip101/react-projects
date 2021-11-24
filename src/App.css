@@ -57,12 +57,6 @@ section {
   color: var(--main-color);
   padding: 0;
 }
-.remove:hover {
-  color: #28c52879;
-}
-.btn:hover {
-  background-color: #28c52879;
-}
 .btn {
   margin: auto;
   margin-top: 2rem;

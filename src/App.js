@@ -6,7 +6,9 @@ import './App.css'
 // import Accordion from './Accordion/Accordion'
 // import Menu from './Menu/Menu'
 // import Tabs from './Tabs/Tabs'
-import Slider from './Slider/Slider'
+// import Slider from './Slider/Slider'
+// import Lorem from './Lorem Ipsum Generator/Lorem'
+import Color from './Color Shades Generator/Color'
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         {/* <Accordion /> */}
         {/* <Menu /> */}
         {/* <Tabs /> */}
-        <Slider />
+        {/* <Slider /> */}
+        {/* <Lorem /> */}
+        <Color />
       </div>
     </>
   )

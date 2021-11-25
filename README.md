@@ -8,9 +8,11 @@
 - Tours
 - Reviews
 - Questions
-- [Menu](https://jyotip101.github.io/react-projects/)
+- Menu
 - Tabs
-- Slider
+- [Slider](https://jyotip101.github.io/react-projects/)
+<!-- - Lorem Ipsum Generator
+- Color Shades Generator -->
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

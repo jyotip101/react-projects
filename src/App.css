@@ -1,28 +1,27 @@
 :root {
   --font-famaly: Helvetica;
+  --transition: all 0.3s linear;
 }
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-famaly);
   background-color: var(--shodow-color);
   color: var(--font-color);
-  font-weight: 600;
+  line-height: 1.5;
+  font-size: 0.875rem;
 }
 
-.App {
+/* .App {
   margin: 2rem auto;
   text-align: center;
-}
-h1 {
-  font-size: 120%;
-  margin: 2rem 0;
-}
-.section,
+} */
+/* .section,
 section {
   margin: 2px auto;
   color: var(--shodow-color);
@@ -34,7 +33,7 @@ section {
   align-items: center;
   padding: 0.5rem 0;
   width: 400px;
-}
+} */
 
 .btn,
 .remove {

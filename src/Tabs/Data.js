@@ -1,5 +1,16 @@
 const Data = [
   {
+    id: 4,
+    name: 'Skylah Lu',
+    job: 'the boss',
+    url: 'https://raw.githubusercontent.com/jyotip101/my-team-page/main/images/photo4.png',
+    text: [
+      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. ',
+      'VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+      'VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+    ],
+  },
+  {
     id: 1,
     job: 'Product owner',
     name: 'Bill Mahoney',
@@ -27,17 +38,6 @@ const Data = [
     text: [
       'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal',
       ' activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
-    ],
-  },
-  {
-    id: 4,
-    name: 'Skylah Lu',
-    job: 'the boss',
-    url: 'https://raw.githubusercontent.com/jyotip101/my-team-page/main/images/photo4.png',
-    text: [
-      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. ',
-      'VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
-      'VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
     ],
   },
 ]

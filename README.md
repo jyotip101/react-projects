@@ -4,11 +4,13 @@
 
 ## Table of Contents
 
-- Birthdays Reminder
+- Birthday Reminder
 - Tours
 - Reviews
 - Questions
 - [Menu](https://jyotip101.github.io/react-projects/)
+- Tabs
+- Slider
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

@@ -4,7 +4,9 @@ import './App.css'
 // import Tours from './Tours/Tours'
 // import Reviews from './Reviews/Reviews'
 // import Accordion from './Accordion/Accordion'
-import Menu from './Menu/Menu'
+// import Menu from './Menu/Menu'
+// import Tabs from './Tabs/Tabs'
+import Slider from './Slider/Slider'
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         {/* <Tours /> */}
         {/* <Reviews /> */}
         {/* <Accordion /> */}
-        <Menu />
+        {/* <Menu /> */}
+        {/* <Tabs /> */}
+        <Slider />
       </div>
     </>
   )

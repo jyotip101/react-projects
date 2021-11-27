@@ -11,8 +11,8 @@
 - Menu
 - Tabs
 - [Slider](https://jyotip101.github.io/react-projects/)
-<!-- - Lorem Ipsum Generator
-- Color Shades Generator -->
+- Lorem Ipsum Generator
+- Color Shades Generator
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

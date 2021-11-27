@@ -1,7 +1,7 @@
 :root {
   --font-color: #000;
-  --bg-color: #ddd;
-  --main-color: #fb6c6d;
+  --bg-color: #fff;
+  --main-color: #2e7ce4;
 }
 
 body {
@@ -22,21 +22,28 @@ label {
   font-weight: 700;
 }
 input {
-  border: none;
+  border: 2px solid #b1afaf;
   background-color: #fff;
   border-radius: 5px;
   outline: none;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   font-weight: 600;
   font-size: 100%;
+  margin-right: 5px;
+}
+.error {
+  border: 2px solid #ff0000;
 }
 
+.numbers {
+  width: 90px;
+}
 .btn {
   background-color: var(--main-color);
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   margin: 0.5rem;
-  color: #fff;
+  color: #ffffff;
   display: inline;
   font-size: 120%;
 }
@@ -56,7 +63,9 @@ input {
   padding: 1rem 0 0;
   display: flex;
   margin: 0.5rem;
+  color: var(--bg-color);
   /* justify-content: center; */
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }

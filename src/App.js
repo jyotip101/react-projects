@@ -8,7 +8,8 @@ import './App.css'
 // import Tabs from './Tabs/Tabs'
 // import Slider from './Slider/Slider'
 // import Lorem from './Lorem Ipsum Generator/Lorem'
-import Color from './Color Shades Generator/Color'
+// import Color from './Color Shades Generator/Color'
+import GroceryBud from './Grocery Bud/GroceryBud'
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         {/* <Tabs /> */}
         {/* <Slider /> */}
         {/* <Lorem /> */}
-        <Color />
+        {/* <Color /> */}
+        <GroceryBud />
       </div>
     </>
   )

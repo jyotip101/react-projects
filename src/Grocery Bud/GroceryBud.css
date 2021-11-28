@@ -1,0 +1,135 @@
+body {
+  background-color: #ececec;
+  font-family: var(--font-famaly);
+}
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.contant {
+  background-color: #fff;
+  box-shadow: var(--light-shadow);
+  padding: 2rem;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+.contant:hover,
+.contant:focus {
+  box-shadow: var(--dark-shadow);
+}
+.error {
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 5px 0 0 5px;
+  background-color: #0404fa0e;
+  font-size: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 170%;
+  margin: 0 auto 1.5rem auto;
+}
+input {
+  width: 45vw;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px 0 0 5px;
+  background-color: #0404fa0e;
+  font-size: 100%;
+}
+.form-contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin: 0;
+  background-color: #0404fa85;
+  transition: var(--transition);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  font-size: 100%;
+  color: #fff;
+}
+.btn:focus,
+.btn:hover {
+  background-color: #0404faaf;
+  color: #ddd;
+}
+.list-contant {
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-btn {
+  display: flex;
+}
+.list-btn .btn {
+  color: #0080007a;
+  padding: 0;
+  margin: 0.5rem;
+  background-color: transparent;
+  transition: var(--transition);
+}
+
+.list-btn .btn:last-child {
+  color: #ff00007a;
+}
+
+.list-btn .btn:hover,
+.list-btn .btn:focus {
+  color: #008000c7;
+}
+.list-btn .btn:last-child:hover,
+.list-btn .btn:last-child:focus {
+  color: #ff0000c7;
+}
+.items {
+  font-size: 120%;
+}
+.list-contant {
+  background-color: #0404fb05;
+  border-radius: 5px 0 0 5px;
+  flex-wrap: wrap;
+}
+.btn-clear {
+  color: #ff000079;
+  padding: 0;
+  margin: 1.5rem auto 0.2rem auto;
+  text-transform: capitalize;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-clear:hover,
+.btn-clear:focus {
+  color: #ff0000cb;
+  background-color: transparent;
+}
+@media screen and (max-width: 500px) {
+  .form-contant {
+    flex-direction: column;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  .list-contant {
+    justify-content: center;
+  }
+  .contant {
+    width: 90%;
+    margin: 1rem;
+  }
+}

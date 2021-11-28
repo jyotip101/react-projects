@@ -7,21 +7,18 @@ import ColorList from './ColorList'
 
 const Color = () => {
   const [color, setColor] = useState('')
-  const [weightValue, setWeightValue] = useState('')
+  // const [weightValue, setWeightValue] = useState('')
   const [error, setError] = useState(false)
-  const [colorList, setColorList] = useState(
-    new Values('#ff0000').all(weightValue)
-  )
+  const [colorList, setColorList] = useState(new Values('#ff0000').all(10))
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
     try {
-      let weights = weightValue === '' || weightValue < 0 ? 10 : weightValue
-      let colors = new Values(color).all(weights)
-      setWeightValue(weights)
+      // let weights = weightValue === '' || weightValue < 0 ? 10 : weightValue
+      let colors = new Values(color).all(10)
+      // setWeightValue(weights)
       setColorList(colors)
-      console.log(weights)
     } catch (err) {
       setError(true)
       console.log(err)
@@ -51,7 +48,7 @@ const Color = () => {
               placeholder='#ff0000'
               onChange={(e) => setColor(e.target.value)}
             />
-            <input
+            {/* <input
               type='number'
               className='numbers'
               id='numbers'
@@ -59,7 +56,7 @@ const Color = () => {
               placeholder='10%'
               value={weightValue}
               onChange={(e) => setWeightValue(e.target.value)}
-            />
+            /> */}
             <button type='submit' className='btn'>
               Generator
             </button>

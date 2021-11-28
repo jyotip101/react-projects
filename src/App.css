@@ -1,6 +1,8 @@
 :root {
   --font-famaly: Helvetica;
   --transition: all 0.3s linear;
+  --light-shadow: 0 5px 15px #0000001a;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 *,
 ::after,
@@ -10,17 +12,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--font-famaly);
-  background-color: var(--shodow-color);
-  color: var(--font-color);
   line-height: 1.5;
   font-size: 0.875rem;
 }
 
-/* .App {
+.App {
   margin: 2rem auto;
   text-align: center;
-} */
+}
 /* .section,
 section {
   margin: 2px auto;

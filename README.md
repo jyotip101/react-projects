@@ -13,7 +13,7 @@
 - Slider
 - Lorem Ipsum Generator
 - Color Shades Generator
-- (Grocery Bud)[https://jyotip101.github.io/react-projects/]
+- [Grocery Bud](https://jyotip101.github.io/react-projects/)
 
 <!-- - [How to clone this repository](#how-to-clone-this-repository)
 <!-- OVERVIEW -->

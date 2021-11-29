@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
-const List = ({ items, deleteList }) => {
-  // const [edit, setEdit] = useState(false)
-  // const [deleteItem, setDeleteItem] = useState('')
+const List = ({ items, deleteList, editItemOfList }) => {
   return (
     <>
       {items.map((item) => {
@@ -11,7 +9,11 @@ const List = ({ items, deleteList }) => {
           <div key={id} className='list-contant'>
             <p className='items'>{text}</p>
             <div className='list-btn'>
-              <button className='btn' type='submit'>
+              <button
+                onClick={() => editItemOfList(id)}
+                className='btn'
+                type='submit'
+              >
                 <span className='material-icons'>edit</span>
               </button>
               <button

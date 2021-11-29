@@ -1,4 +1,6 @@
 body {
+  line-height: 1.5;
+  font-size: 0.875rem;
   background-color: #ececec;
   font-family: var(--font-famaly);
 }
@@ -19,12 +21,14 @@ body {
 .contant:focus {
   box-shadow: var(--dark-shadow);
 }
-.error {
+.Alert {
   border: none;
   padding: 0.3rem 1rem;
   border-radius: 5px 0 0 5px;
-  background-color: #0404fa0e;
+  text-transform: capitalize;
   font-size: 100%;
+  text-align: center;
+  transition: var(--transition);
 }
 h1 {
   text-align: center;
@@ -36,7 +40,7 @@ input {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px 0 0 5px;
-  background-color: #0404fa0e;
+  background-color: rgba(4, 4, 250, 0.055);
   font-size: 100%;
 }
 .form-contant {
@@ -58,6 +62,10 @@ input {
 .btn:hover {
   background-color: #0404faaf;
   color: #ddd;
+}
+.lists-contaner {
+  display: flex;
+  flex-direction: column;
 }
 .list-contant {
   margin-top: 2rem;
@@ -95,7 +103,6 @@ input {
 .list-contant {
   background-color: #0404fb05;
   border-radius: 5px 0 0 5px;
-  flex-wrap: wrap;
 }
 .btn-clear {
   color: #ff000079;
@@ -127,6 +134,7 @@ input {
   }
   .list-contant {
     justify-content: center;
+    flex-wrap: wrap;
   }
   .contant {
     width: 90%;

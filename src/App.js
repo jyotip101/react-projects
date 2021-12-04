@@ -9,7 +9,8 @@ import './App.css'
 // import Slider from './Slider/Slider'
 // import Lorem from './Lorem Ipsum Generator/Lorem'
 // import Color from './Color Shades Generator/Color'
-import GroceryBud from './Grocery Bud/GroceryBud'
+// import GroceryBud from './Grocery Bud/GroceryBud'
+import Navbar from './Navbar/Navbar'
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         {/* <Slider /> */}
         {/* <Lorem /> */}
         {/* <Color /> */}
-        <GroceryBud />
+        {/* <GroceryBud /> */}
+        <Navbar />
       </div>
     </>
   )

@@ -54,7 +54,9 @@ button {
 }
 .links-container {
   text-align: left;
-  margin: 1rem;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
 }
 .links {
   display: flex;
@@ -70,6 +72,11 @@ li a {
   color: #000;
   font-size: 1.2rem;
   text-align: start;
+}
+@media screen and (min-width: 800px) {
+  .links-container {
+    height: auto !important;
+  }
 }
 @media screen and (max-width: 800px) {
   .social-icons {
@@ -87,6 +94,5 @@ li a {
   }
   .links {
     flex-direction: column;
-    margin-left: -1rem;
   }
 }

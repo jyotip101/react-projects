@@ -10,7 +10,8 @@ import './App.css'
 // import Lorem from './Lorem Ipsum Generator/Lorem'
 // import Color from './Color Shades Generator/Color'
 // import GroceryBud from './Grocery Bud/GroceryBud'
-import Navbar from './Navbar/Navbar'
+// import Navbar from './Navbar/Navbar'
+import ModalAndSidebar from './Modal And Sidebar/ModalAndSidebar'
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
         {/* <Lorem /> */}
         {/* <Color /> */}
         {/* <GroceryBud /> */}
-        <Navbar />
+        {/* <Navbar /> */}
+        <ModalAndSidebar />
       </div>
     </>
   )

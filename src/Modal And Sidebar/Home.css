@@ -1,0 +1,39 @@
+.App {
+  margin: 0px;
+}
+main {
+  position: absolute;
+  z-index: -1;
+}
+button {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+.menu-button {
+  display: flex;
+  margin: 1rem;
+  font-size: 200%;
+  background-color: #fff;
+  color: #0056d2;
+  box-shadow: 0 2px 20px rgb(131 131 131 / 50%);
+  border-radius: 2px;
+}
+
+.menu-button i {
+  font-size: 200%;
+  cursor: pointer;
+}
+.modal-button {
+  margin-top: 40vh;
+  margin-left: 30vw;
+  background-color: #0056d2;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 130%;
+  box-shadow: 0 2px 20px rgb(131 131 131 / 50%);
+}

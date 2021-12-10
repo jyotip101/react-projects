@@ -1,0 +1,32 @@
+.hide-modal {
+  display: none;
+}
+.show-modal {
+  background-color: #ddd;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  z-index: 2;
+}
+.modal-contant {
+  position: relative;
+  width: 40%;
+  background-color: #fff;
+}
+.close-button {
+  position: absolute;
+  margin: 1rem;
+  color: blue;
+  background-color: transparent;
+  cursor: pointer;
+  right: 0;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}

@@ -12,7 +12,7 @@ import './App.css'
 // import GroceryBud from './Grocery Bud/GroceryBud'
 // import Navbar from './Navbar/Navbar'
 import ModalAndSidebar from './Modal And Sidebar/ModalAndSidebar'
-
+import { AppProvider } from './Modal And Sidebar/Context'
 function App() {
   return (
     <>
@@ -28,7 +28,9 @@ function App() {
         {/* <Color /> */}
         {/* <GroceryBud /> */}
         {/* <Navbar /> */}
-        <ModalAndSidebar />
+        <AppProvider>
+          <ModalAndSidebar />
+        </AppProvider>
       </div>
     </>
   )

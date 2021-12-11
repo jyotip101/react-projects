@@ -1,0 +1,75 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-contaner {
+  width: 100%;
+  background-color: transparent;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+.nav-items span,
+.menu-btn i {
+  font-size: 300%;
+}
+.menu-btn,
+.link-btn,
+.signin-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.nav-links {
+  display: none;
+}
+.signin-btn {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .nav-items {
+    margin: 0;
+  }
+  .nav-contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links li {
+    list-style: none;
+    margin: 0.5rem;
+  }
+  .link-btn {
+    font-size: 120%;
+    transition: var(--transition);
+    text-transform: capitalize;
+  }
+
+  .link-btn:hover,
+  .link-btn:focus {
+    color: pink;
+  }
+  .signin-btn {
+    display: block;
+    font-size: 120%;
+    background-color: pink;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+}

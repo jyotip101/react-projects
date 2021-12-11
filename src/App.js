@@ -11,8 +11,11 @@ import './App.css'
 // import Color from './Color Shades Generator/Color'
 // import GroceryBud from './Grocery Bud/GroceryBud'
 // import Navbar from './Navbar/Navbar'
-import ModalAndSidebar from './Modal And Sidebar/ModalAndSidebar'
-import { AppProvider } from './Modal And Sidebar/Context'
+// import ModalAndSidebar from './Modal And Sidebar/ModalAndSidebar'
+// import { AppProvider } from './Modal And Sidebar/Context'
+import StripeSubmenus from './Stripe Submenus/StripeSubmenus'
+import { AppProvider } from './Stripe Submenus/Context'
+
 function App() {
   return (
     <>
@@ -28,8 +31,11 @@ function App() {
         {/* <Color /> */}
         {/* <GroceryBud /> */}
         {/* <Navbar /> */}
-        <AppProvider>
+        {/* <AppProvider>
           <ModalAndSidebar />
+        </AppProvider> */}
+        <AppProvider>
+          <StripeSubmenus />
         </AppProvider>
       </div>
     </>

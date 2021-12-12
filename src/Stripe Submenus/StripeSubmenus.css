@@ -19,7 +19,8 @@
 }
 .menu-btn,
 .link-btn,
-.signin-btn {
+.signin-btn,
+.start-btn {
   border: none;
   outline: none;
   background-color: transparent;
@@ -72,4 +73,56 @@
     padding: 0.5rem 1rem;
     border-radius: 2rem;
   }
+}
+
+/* home page */
+
+.hero-container {
+  width: 100%;
+  background-color: #ddd;
+}
+.hero-center {
+  display: flex;
+}
+.hero-item-2 {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .hero-center {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+
+  .hero-item-2 {
+    display: flex;
+    color: pink;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero-item-1 {
+  margin: 2rem auto;
+}
+.hero-header {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 60%;
+  font-size: 270%;
+  text-align: left;
+}
+.hero-decs {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 80%;
+  text-align: left;
+  font-size: 110%;
+}
+.start-btn {
+  display: block;
+  font-size: 120%;
+  background-color: pink;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
 }

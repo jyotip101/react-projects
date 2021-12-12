@@ -8,8 +8,8 @@ const StripeSubmenus = () => {
   return (
     <>
       <Header />
-      <Home />
       <SubMenu />
+      <Home />
     </>
   )
 }

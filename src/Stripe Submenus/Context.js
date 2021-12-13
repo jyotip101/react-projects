@@ -2,8 +2,16 @@ import React, { useContext, useState } from 'react'
 
 const AppContext = React.createContext()
 export const AppProvider = ({ children }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(true)
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+
+  const openSidebar = () => {
+    setIsSidebarOpen(true)
+  }
+  const closeSidebar = () => {
+    setIsSidebarOpen(false)
+  }
 
   const openSubMenu = () => {
     setIsSubMenuOpen(true)
@@ -23,8 +31,11 @@ export const AppProvider = ({ children }) => {
       value={{
         isModalOpen,
         isSubMenuOpen,
+        isSidebarOpen,
+        openSidebar,
         openSubMenu,
         openModal,
+        closeSidebar,
         closeModal,
         closeSubMenu,
       }}

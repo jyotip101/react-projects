@@ -3,15 +3,14 @@ import { data } from './Data'
 import { useGlobalContext } from './Context'
 
 const Header = () => {
-  const { openSunbMenu, closeSubMenu } = useGlobalContext()
-  console.log(data)
+  const { openSidebar } = useGlobalContext()
   return (
     <>
       <nav className='nav-contaner'>
         <div className='nav-contant'>
           <div className='nav-items'>
             <span className='material-icons'>logo_dev</span>
-            <button className='menu-btn' onClick={openSunbMenu}>
+            <button className='menu-btn' onClick={openSidebar}>
               <i className='material-icons'>menu</i>
             </button>
           </div>

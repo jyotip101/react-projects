@@ -17,8 +17,8 @@ const Home = () => {
             <button className='start-btn'>start now</button>
           </div>
           <div className='hero-item-2'>
-            <span class='material-icons'>timeline timeline timeline</span>
-            <span class='material-icons'>timeline timeline timeline</span>
+            <span className='material-icons'>timeline timeline timeline</span>
+            <span className='material-icons'>timeline timeline timeline</span>
           </div>
         </div>
       </div>

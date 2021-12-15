@@ -212,3 +212,24 @@ a i {
   padding-right: 0.3rem;
   color: pink;
 }
+
+/* hover menu */
+.submenu-container {
+  width: fit-content;
+  padding: 1rem;
+}
+.sub-con {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  transform: translate(0px, -25px) rotate(45deg);
+  box-shadow: -3px -3px 7px #ddd, 3px 3px 7px #fff;
+}
+.submenu-contant {
+  background-color: #fff;
+  box-shadow: var(--dark-shadow);
+  margin: 0.5rem 1rem;
+  transition: var(--transition);
+  padding: 1rem;
+}

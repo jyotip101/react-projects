@@ -9,9 +9,9 @@ const StripeSubmenus = () => {
   return (
     <>
       <Header />
+      <SubMenu />
       <Sidebar />
       <Home />
-      <SubMenu />
     </>
   )
 }

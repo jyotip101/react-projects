@@ -1,22 +1,44 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { data } from './Data'
 import { useGlobalContext } from './Context'
 
 const SubMunu = () => {
-  const { isSubMenuOpen, closeSubMenu } = useGlobalContext()
-
+  const {
+    isSubMenuOpen,
+    location,
+    page: { page, links },
+  } = useGlobalContext()
+  const container = useRef(null)
+  useEffect(() => {
+    const sMenu = container.current
+    const { center, bottom } = location
+    sMenu.style.left = `${center}px`
+    sMenu.style.top = `${bottom}px`
+  }, [location])
   return (
-    <aside className='submenu-container'>
+    <aside
+      className={`${
+        isSubMenuOpen ? 'submenu-container' : 'hide-submenu-container'
+      }`}
+      ref={container}
+    >
       <div className='submenu-contant'>
         <p className='sub-con'></p>
-        {data.map((item, index) => {
-          const { page, links } = item
-          return (
-            <div key={index} className='submenu-items'>
-              <h4>{page}</h4>
-            </div>
-          )
-        })}
+
+        <div className='submenu-items'>
+          <h4>{page}</h4>
+          <div className='subMenu-links'>
+            {links.map((link, index) => {
+              const { icon, url, label } = link
+              return (
+                <a href={url} key={index}>
+                  <i className='material-icons'> {icon}</i>
+                  {label}
+                </a>
+              )
+            })}
+          </div>
+        </div>
       </div>
     </aside>
   )

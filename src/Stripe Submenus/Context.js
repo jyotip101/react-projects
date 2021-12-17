@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react'
-
+import { data } from './Data'
 const AppContext = React.createContext()
 export const AppProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(true)
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(true)
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const [location, setLocation] = useState({})
+  const [page, setPage] = useState({ page: '', links: [] })
 
   const openSidebar = () => {
     setIsSidebarOpen(true)
@@ -13,7 +15,10 @@ export const AppProvider = ({ children }) => {
     setIsSidebarOpen(false)
   }
 
-  const openSubMenu = () => {
+  const openSubMenu = (text, coordinates) => {
+    const page = data.find((link) => link.page === text)
+    setPage(page)
+    setLocation(coordinates)
     setIsSubMenuOpen(true)
   }
   const closeSubMenu = () => {
@@ -38,6 +43,8 @@ export const AppProvider = ({ children }) => {
         closeSidebar,
         closeModal,
         closeSubMenu,
+        location,
+        page,
       }}
     >
       {children}

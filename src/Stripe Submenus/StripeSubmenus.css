@@ -216,7 +216,21 @@ a i {
 /* hover menu */
 .submenu-container {
   width: fit-content;
-  padding: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 3;
+  transition: var(--transition);
+}
+.hide-submenu-container {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .submenu-container {
+    display: none;
+  }
 }
 .sub-con {
   width: 20px;
@@ -229,7 +243,35 @@ a i {
 .submenu-contant {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
+  border-radius: 2px;
   margin: 0.5rem 1rem;
   transition: var(--transition);
   padding: 1rem;
+}
+.submenu-items h4 {
+  text-align: left;
+  font-size: 150%;
+}
+
+.subMenu-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem 1rem 0;
+}
+.subMenu-links a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+a:hover :focus {
+  color: pink;
+}
+a i {
+  padding-right: 0.3rem;
+  color: pink;
 }

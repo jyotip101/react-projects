@@ -3,7 +3,7 @@ import { data } from './Data'
 import { useGlobalContext } from './Context'
 
 const Header = () => {
-  const { openSidebar, openSubMenu } = useGlobalContext()
+  const { openSidebar, openSubMenu, closeSubMenu } = useGlobalContext()
   const showSubMenu = (e) => {
     const page = e.target.textContent
     const tempBtn = e.target.getBoundingClientRect()
@@ -11,10 +11,14 @@ const Header = () => {
     const bottom = tempBtn.bottom + 12
     openSubMenu(page, { center, bottom })
   }
-
+  const handleSubMenu = (e) => {
+    if (!e.target.classList.contains('link-btn')) {
+      closeSubMenu()
+    }
+  }
   return (
     <>
-      <nav className='nav-contaner'>
+      <nav className='nav-contaner' onMouseOver={handleSubMenu}>
         <div className='nav-contant'>
           <div className='nav-items'>
             <span className='material-icons'>logo_dev</span>
@@ -26,7 +30,7 @@ const Header = () => {
             {data.map((item, index) => {
               const { page, links } = item
               return (
-                <li key={index}>
+                <li key={index} className='navbar-link'>
                   <button className='link-btn' onMouseOver={showSubMenu}>
                     {page}
                   </button>

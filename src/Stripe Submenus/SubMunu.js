@@ -18,7 +18,7 @@ const SubMunu = () => {
   return (
     <aside
       className={`${
-        isSubMenuOpen ? 'submenu-container' : 'hide-submenu-container'
+        isSubMenuOpen ? 'submenu-container show' : 'submenu-container'
       }`}
       ref={container}
     >

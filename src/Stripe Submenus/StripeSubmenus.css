@@ -219,12 +219,13 @@ a i {
   position: absolute;
   top: 4rem;
   left: 50%;
+  display: none;
   transform: translate(-50%);
   z-index: 3;
   transition: var(--transition);
 }
-.hide-submenu-container {
-  display: none;
+.show {
+  display: block;
 }
 
 @media screen and (max-width: 700px) {
@@ -244,7 +245,6 @@ a i {
   background-color: #fff;
   box-shadow: var(--dark-shadow);
   border-radius: 2px;
-  margin: 0.5rem 1rem;
   transition: var(--transition);
   padding: 1rem;
 }
@@ -268,7 +268,7 @@ a i {
   transition: var(--transition);
   text-transform: capitalize;
 }
-a:hover :focus {
+a:hover {
   color: pink;
 }
 a i {

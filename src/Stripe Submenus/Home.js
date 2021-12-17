@@ -1,8 +1,12 @@
 import React from 'react'
+import { useGlobalContext } from './Context'
+
 const Home = () => {
+  const { closeSubMenu } = useGlobalContext()
+
   return (
     <>
-      <div className='hero-container'>
+      <div className='hero-container' onMouseOver={closeSubMenu}>
         <div className='hero-center'>
           <div className='hero-item-1'>
             <h1 className='hero-header'>

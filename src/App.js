@@ -13,8 +13,10 @@ import './App.css'
 // import Navbar from './Navbar/Navbar'
 // import ModalAndSidebar from './Modal And Sidebar/ModalAndSidebar'
 // import { AppProvider } from './Modal And Sidebar/Context'
-import StripeSubmenus from './Stripe Submenus/StripeSubmenus'
-import { AppProvider } from './Stripe Submenus/Context'
+// import StripeSubmenus from './Stripe Submenus/StripeSubmenus'
+// import { AppProvider } from './Stripe Submenus/Context'
+import Cart from './Cart/Cart'
+import { AppArovider } from './Cart/Contaxt'
 
 function App() {
   return (
@@ -34,9 +36,12 @@ function App() {
         {/* <AppProvider>
           <ModalAndSidebar />
         </AppProvider> */}
-        <AppProvider>
+        {/* <AppProvider>
           <StripeSubmenus />
-        </AppProvider>
+        </AppProvider> */}
+        <AppArovider>
+          <Cart />
+        </AppArovider>
       </div>
     </>
   )

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { data } from './Data'
 import { useGlobalContext } from './Context'
 
 const SubMunu = () => {

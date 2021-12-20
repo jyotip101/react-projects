@@ -28,7 +28,7 @@ const Header = () => {
           </div>
           <ul className='nav-links'>
             {data.map((item, index) => {
-              const { page, links } = item
+              const { page } = item
               return (
                 <li key={index} className='navbar-link'>
                   <button className='link-btn' onMouseOver={showSubMenu}>

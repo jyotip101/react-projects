@@ -1,0 +1,43 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #eee;
+}
+nav {
+  width: 100%;
+  background-color: crimson;
+}
+.nav-contant {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+h3 {
+  font-size: 200%;
+  color: #fff;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.nav-icons i {
+  font-size: 250%;
+}
+.cart-amount {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 20%, 99%, 0.5);
+  border-radius: 100%;
+  color: #fff;
+  transform: translate(-20px, -20px);
+  transition: var(--transition);
+}

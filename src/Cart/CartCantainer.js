@@ -9,7 +9,9 @@ const CartCantainer = () => {
       <>
         <main className='cart-container'>
           <div className='cart-empty'>
-            <h2>Your bag</h2>
+            <header>
+              <h1>your bag</h1>
+            </header>
             <h4> add item in your bag</h4>
           </div>
         </main>
@@ -19,10 +21,22 @@ const CartCantainer = () => {
   return (
     <>
       <main className='cart-container'>
-        <div className='cart-empty'>
-          <h2>Your bag</h2>
-          <h4> add item in your bag</h4>
+        <header>
+          <h1>your bag</h1>
+        </header>
+        <div className='cart-items'>
+          {cart.map((item) => {
+            return <CartItem key={item.id} {...item} />
+          })}
         </div>
+        <footer>
+          <hr />
+          <div className='cart-total'>
+            <h4>total</h4>
+            <h4>$0.00</h4>
+          </div>
+          <button className='clear-btn'>clear cart</button>
+        </footer>
       </main>
     </>
   )

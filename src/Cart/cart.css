@@ -7,7 +7,7 @@ body {
 }
 nav {
   width: 100%;
-  background-color: crimson;
+  background-color: rgba(220, 20, 60, 0.877);
 }
 .nav-contant {
   margin: 0;
@@ -40,4 +40,134 @@ h3 {
   color: #fff;
   transform: translate(-20px, -20px);
   transition: var(--transition);
+}
+@media screen and (max-width: 400px) {
+  .nav-contant {
+    padding: 1rem;
+  }
+}
+/* cart card */
+.cart-container {
+  margin: 0.5rem;
+}
+.cart-container header h1 {
+  text-transform: capitalize;
+  color: rgba(220, 20, 60, 0.87);
+  margin: 1rem;
+}
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cart-card {
+  width: 300px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 1rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+.cart-card:hover,
+.cart-card:focus {
+  box-shadow: var(--dark-shadow);
+}
+.cart-card img {
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.cart-decs {
+  margin: 0 1rem;
+}
+.cart-decs h4 {
+  font-size: 120%;
+  text-align: center;
+}
+.cart-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+.cart-price h4 {
+  color: crimson;
+}
+.cart-price h4 {
+  display: flex;
+  align-items: center;
+}
+.cart-price h4 i {
+  color: yellow;
+}
+.btn-contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 150%;
+}
+.btn-contant button,
+.btn-contant {
+  outline: none;
+  border: none;
+  margin: 0 1rem;
+  padding: 0;
+  background-color: transparent;
+  color: rgba(220, 20, 60, 0.8);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-contant button i {
+  font-size: 200%;
+}
+.btn-contant button:hover,
+.btn-contant button:focus {
+  color: crimson;
+}
+.remove-btn,
+.clear-btn {
+  outline: none;
+  border: none;
+  margin: 0.5rem auto;
+  background-color: rgba(220, 20, 60, 0.8);
+  border-radius: 5px;
+  padding: 0.3rem;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-btn:hover,
+.remove-btn:focus,
+.clear-btn:hover,
+.clear-btn:focus {
+  background: crimson;
+}
+/* footer */
+footer {
+  width: 100%;
+  margin: 1rem auto;
+}
+footer hr {
+  margin: 0.5rem 1.5rem;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 5rem;
+  font-size: 150%;
+}
+.clear-btn {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  font-size: 150%;
+  text-transform: capitalize;
 }

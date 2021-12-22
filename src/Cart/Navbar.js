@@ -2,6 +2,7 @@ import React from 'react'
 import { useGlobalContext } from './Contaxt'
 
 const Navbar = () => {
+  const { amount } = useGlobalContext()
   return (
     <>
       <nav>
@@ -10,7 +11,7 @@ const Navbar = () => {
           <div className='nav-icons'>
             <i className='material-icons'>shopping_cart</i>
             <div className='cart-amount'>
-              <p className='amount'>4</p>
+              <p className='amount'>{amount}</p>
             </div>
           </div>
         </div>
@@ -18,5 +19,4 @@ const Navbar = () => {
     </>
   )
 }
-// ;;<span class='material-icons-outlined'>expand_less expand_more</span>
 export default Navbar

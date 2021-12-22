@@ -1,13 +1,37 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useReducer, useState } from 'react'
 import data from './data'
+import reducer from './reducer'
 
+const initState = {
+  loading: false,
+  cart: data,
+  total: 0,
+  amount: 0,
+}
 const AppContext = React.createContext()
 const AppArovider = ({ children }) => {
-  const [cart, setCart] = useState(data)
+  const [state, dispatch] = useReducer(reducer, initState)
 
+  const clearCart = () => {
+    dispatch({ type: 'CLEAR_CART' })
+  }
+  const removeCart = (id) => {
+    dispatch({ type: 'REMOVE_ITEM', payload: id })
+  }
+
+  const increase = (id) => {
+    dispatch({ type: 'INCREASE', payload: id })
+  }
+  const decrease = (id) => {
+    dispatch({ type: 'DECREASE', payload: id })
+  }
   return (
     <>
-      <AppContext.Provider value={{ cart }}>{children}</AppContext.Provider>
+      <AppContext.Provider
+        value={{ ...state, clearCart, removeCart, increase, decrease }}
+      >
+        {children}
+      </AppContext.Provider>
     </>
   )
 }

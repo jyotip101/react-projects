@@ -3,11 +3,12 @@
   padding: 0;
 }
 body {
-  background-color: #eee;
+  background-color: #f7eff8;
 }
 nav {
   width: 100%;
-  background-color: rgba(220, 20, 60, 0.877);
+  /* background-color: rgba(220, 20, 60, 0.877); */
+  background-color: #9376ee;
 }
 .nav-contant {
   margin: 0;
@@ -52,7 +53,7 @@ h3 {
 }
 .cart-empty h4 {
   font-size: 150%;
-  color: crimson;
+  color: #8c7acb;
 }
 .cart-container header h1 {
   text-transform: capitalize;
@@ -95,7 +96,7 @@ h3 {
   margin: 0.5rem;
 }
 .cart-price h4 {
-  color: crimson;
+  color: #9376ee;
 }
 .cart-price h4 {
   display: flex;
@@ -118,7 +119,7 @@ h3 {
   margin: 0 1rem;
   padding: 0;
   background-color: transparent;
-  color: rgba(220, 20, 60, 0.8);
+  color: hsl(254, 78%, 70%);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -127,14 +128,14 @@ h3 {
 }
 .btn-contant button:hover,
 .btn-contant button:focus {
-  color: crimson;
+  color: #9276eec9;
 }
 .remove-btn,
 .clear-btn {
   outline: none;
   border: none;
   margin: 0.5rem auto;
-  background-color: rgba(220, 20, 60, 0.8);
+  background-color: #9376ee;
   border-radius: 5px;
   padding: 0.3rem;
   width: 100%;
@@ -150,7 +151,7 @@ h3 {
 .remove-btn:focus,
 .clear-btn:hover,
 .clear-btn:focus {
-  background: crimson;
+  background: #9276eeb9;
 }
 /* footer */
 footer {

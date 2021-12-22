@@ -11,11 +11,11 @@ const CartItem = ({ id, photo, title, price, amount, rating }) => {
         <div className='cart-decs'>
           <h4>{title}</h4>
           <div className='cart-price'>
-            <h4>${price}</h4>
             <h4>
               <i className='material-icons'>star</i>
               {rating}
             </h4>
+            <h4>${price}</h4>
           </div>
           <div className='btn-contant'>
             <button onClick={() => increase(id)}>

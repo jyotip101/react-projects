@@ -38,7 +38,25 @@ const reducer = (state, action) => {
 
     return { ...state, cart: deCart }
   }
-  return state
+
+  if (action.type === 'GET_TOTAl') {
+    let { total, amount } = state.cart.reduce(
+      (cartTotal, items) => {
+        const { price, amount } = items
+        const itemTotal = price * amount
+        cartTotal.amount += amount
+        cartTotal.total += itemTotal
+        return cartTotal
+      },
+      {
+        total: 0,
+        amount: 0,
+      }
+    )
+    return { ...state, total: parseFloat(total.toFixed(3)), amount }
+  }
+
+  throw new Error('no matching action type')
 }
 
 export default reducer

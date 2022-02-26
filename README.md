@@ -17,7 +17,7 @@
 - Navbar
 - Modal And Sidebar
 - Stripe Submenus
-- [Cart](https://jyotip101.github.io/react-projects/)
+- [Cart](https://thejyotipatel.github.io/react-projects/)
 
 <!-- ## How to clone this repository -->
 
